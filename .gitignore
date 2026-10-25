@@ -1,0 +1,20 @@
+# Node & Angular Dependencies
+frontend/node_modules/
+frontend/.angular/
+frontend/dist/
+frontend/.tmp/
+
+# Maven & Java Build Output
+backend/target/
+backend/*.class
+backend/*.jar
+backend/*.war
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.swp
+*.DS_Store
+
+# Temporary Log Files
+*.log
