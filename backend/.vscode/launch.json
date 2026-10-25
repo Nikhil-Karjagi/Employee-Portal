@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-EmployeePortalApplication<employee-portal>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.example.employeeportal.EmployeePortalApplication",
+      "projectName": "employee-portal",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

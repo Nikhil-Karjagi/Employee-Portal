@@ -1,0 +1,17 @@
+C:\Users\nikhi\gemini employee fwd\employee-portal\backend\src\main\java\com\example\employeeportal\config\DataSeeder.java
+C:\Users\nikhi\gemini employee fwd\employee-portal\backend\src\main\java\com\example\employeeportal\controller\EmployeeController.java
+C:\Users\nikhi\gemini employee fwd\employee-portal\backend\src\main\java\com\example\employeeportal\controller\LookupController.java
+C:\Users\nikhi\gemini employee fwd\employee-portal\backend\src\main\java\com\example\employeeportal\dto\EmployeeRequest.java
+C:\Users\nikhi\gemini employee fwd\employee-portal\backend\src\main\java\com\example\employeeportal\dto\EmployeeResponse.java
+C:\Users\nikhi\gemini employee fwd\employee-portal\backend\src\main\java\com\example\employeeportal\dto\ErrorResponse.java
+C:\Users\nikhi\gemini employee fwd\employee-portal\backend\src\main\java\com\example\employeeportal\EmployeePortalApplication.java
+C:\Users\nikhi\gemini employee fwd\employee-portal\backend\src\main\java\com\example\employeeportal\entity\Department.java
+C:\Users\nikhi\gemini employee fwd\employee-portal\backend\src\main\java\com\example\employeeportal\entity\Employee.java
+C:\Users\nikhi\gemini employee fwd\employee-portal\backend\src\main\java\com\example\employeeportal\entity\Project.java
+C:\Users\nikhi\gemini employee fwd\employee-portal\backend\src\main\java\com\example\employeeportal\exception\DuplicateResourceException.java
+C:\Users\nikhi\gemini employee fwd\employee-portal\backend\src\main\java\com\example\employeeportal\exception\GlobalExceptionHandler.java
+C:\Users\nikhi\gemini employee fwd\employee-portal\backend\src\main\java\com\example\employeeportal\exception\ResourceNotFoundException.java
+C:\Users\nikhi\gemini employee fwd\employee-portal\backend\src\main\java\com\example\employeeportal\repository\DepartmentRepository.java
+C:\Users\nikhi\gemini employee fwd\employee-portal\backend\src\main\java\com\example\employeeportal\repository\EmployeeRepository.java
+C:\Users\nikhi\gemini employee fwd\employee-portal\backend\src\main\java\com\example\employeeportal\repository\ProjectRepository.java
+C:\Users\nikhi\gemini employee fwd\employee-portal\backend\src\main\java\com\example\employeeportal\service\EmployeeService.java
