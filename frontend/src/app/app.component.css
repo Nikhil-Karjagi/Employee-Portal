@@ -1,0 +1,84 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background-color: #fffaf0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.angular-top-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.angular-logo {
+  width: 48px;
+  height: 48px;
+}
+
+.header-title-group h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #111827;
+  margin: 0;
+}
+
+.header-title-group p {
+  color: #6b7280;
+  margin: 0.25rem 0 0 0;
+  font-size: 0.95rem;
+}
+
+.header-divider {
+  width: 1px;
+  height: 140px;
+  background-color: #f472b6;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pill-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.pill-btn {
+  background: #f3e8ff;
+  color: #7e22ce;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+  width: fit-content;
+}
+
+.pill-btn:hover {
+  background: #e9d5ff;
+}
+
+.social-links {
+  display: flex;
+  gap: 0.75rem;
+  color: #6b7280;
+  font-size: 1.1rem;
+  margin-top: 0.25rem;
+}
+
+.content-body {
+  padding-bottom: 3rem;
+}
