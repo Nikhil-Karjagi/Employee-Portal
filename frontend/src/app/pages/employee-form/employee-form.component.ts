@@ -83,24 +83,43 @@ export class EmployeeFormComponent implements OnInit {
     this.employee.employeeCode = this.employee.employeeCode.trim();
     this.employee.email = this.employee.email.trim();
 
+    const fallbackMsg = 'Employee Code or Email already exists. Please use a unique value.';
+
+    const parseErrorMessage = (err: any, defaultMsg: string): string => {
+      console.log('Full Backend Error Object:', err);
+
+      if (!err) return defaultMsg;
+
+      if (typeof err.error === 'string' && err.error.trim().length > 0) {
+        return err.error;
+      }
+      if (err.error?.message && err.error.message.trim().length > 0) {
+        return err.error.message;
+      }
+      if (err.error?.error && err.error.error.trim().length > 0) {
+        return err.error.error;
+      }
+      if (err.message && err.message.trim().length > 0) {
+        return err.message;
+      }
+
+      return defaultMsg;
+    };
+
     if (this.isEditMode && this.employeeId) {
       this.employeeService.updateEmployee(this.employeeId, this.employee).subscribe({
         next: () => this.router.navigate(['/employees']),
         error: (err) => {
-          console.error(err);
-          this.errorMessage =
-            err.error?.message ||
-            'Failed to update employee. Ensure employee code and email are unique.';
+          console.error('Update Employee Error:', err);
+          this.errorMessage = parseErrorMessage(err, fallbackMsg);
         },
       });
     } else {
       this.employeeService.createEmployee(this.employee).subscribe({
         next: () => this.router.navigate(['/employees']),
         error: (err) => {
-          console.error(err);
-          this.errorMessage =
-            err.error?.message ||
-            'Failed to create employee. Ensure employee code and email are unique.';
+          console.error('Create Employee Error:', err);
+          this.errorMessage = parseErrorMessage(err, fallbackMsg);
         },
       });
     }

@@ -7,8 +7,8 @@
 
     <form (ngSubmit)="onSubmit()" #empForm="ngForm">
       <!-- Error Message Banner -->
-      <div *ngIf="errorMessage" class="error-banner">
-        {{ errorMessage }}
+      <div *ngIf="errorMessage && errorMessage.trim().length > 0" class="error-banner">
+        <strong>Error:</strong> {{ errorMessage }}
       </div>
 
       <div class="form-grid">
